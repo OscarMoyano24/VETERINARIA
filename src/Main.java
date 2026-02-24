@@ -7,8 +7,12 @@ void main() {
     MASCOTA PERRO = new MASCOTA();
 
     PERRO.setNombre("LUCAS");
-    PERRO.setEdad("2");
+    PERRO.setEdad(2);
+    PERRO.setPeso(2.5);
     PERRO.setEspecie("PERRO");
+    PERRO.setVacunado(false);
+    System.out.println(PERRO.toString());
+
 
 
 }

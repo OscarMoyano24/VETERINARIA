@@ -79,5 +79,30 @@ public class MASCOTA {
                 '}';
     }
 
+    public void vacunar() {
+        this.vacunado = true;
+        System.out.println("La mascota ha sido vacunada.");
+    }
+
+    // METODO ALIMENTAR
+    public void alimentar(double cantidad) {
+        if (cantidad > 0) {
+            this.peso += cantidad;
+            System.out.println("La mascota ha sido alimentada.");
+        } else {
+            System.out.println("No se permiten cantidades negativas.");
+        }
+    }
+
+    // METODO CUMPLIR AÑOS
+    public void cumplirAnios() {
+        this.edad += 1;
+        System.out.println("La mascota ha cumplido un año más.");
+    }
+
+    // METODO MOSTRAR INFORMACION
+    public void mostrarInformacion() {
+        System.out.println(this.toString());
+    }
 
 }
